@@ -13,4 +13,6 @@ public class ApplicationProperties {
 
     @Value("${application.security.jwt.expiration}")
     private Long jwtExpiration;
+
+    private final String jwtProviderName = "HSA516";
 }

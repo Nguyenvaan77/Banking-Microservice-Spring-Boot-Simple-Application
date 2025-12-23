@@ -4,7 +4,7 @@
 # Gateway Service
 
 ## Overview
-The **Gateway Service** acts as a single entry point for routing requests to various microservices in a cloud-based architecture. It uses **Spring Cloud Gateway** and integrates with a discovery service (like **Eureka**) to dynamically route requests to registered services. This setup allows for flexible routing, load balancing, and the application of cross-cutting concerns such as authentication and logging.
+The **Gateway Service** acts as a single entry point for routing requests to various microservices in a cloud-based architecture. It uses **Spring Cloud Gateway** and integrates with a discovery service (like **Eureka**) to dynamically route requests to registered services. This setup allows for flexible routing, load balancing, and the application of cross-cutting concerns such as authentication and logging ..
 
 This service is built with **Java 21**, **Spring Boot**, and **Spring Cloud Reactive Gateway**.
 

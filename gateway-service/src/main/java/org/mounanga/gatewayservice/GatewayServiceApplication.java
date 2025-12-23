@@ -7,6 +7,9 @@ import org.springframework.cloud.gateway.discovery.DiscoveryClientRouteDefinitio
 import org.springframework.cloud.gateway.discovery.DiscoveryLocatorProperties;
 import org.springframework.context.annotation.Bean;
 
+/*
+Class trung gian giúp điều hướng request
+*/
 @SpringBootApplication
 public class GatewayServiceApplication {
 
@@ -15,10 +18,10 @@ public class GatewayServiceApplication {
     }
 
     @Bean
-    DiscoveryClientRouteDefinitionLocator discoveryClientRouteDefinitionLocator(ReactiveDiscoveryClient reactiveDiscoveryClient,
-                                                                                DiscoveryLocatorProperties discoveryLocatorProperties){
+    DiscoveryClientRouteDefinitionLocator discoveryClientRouteDefinitionLocator(
+            ReactiveDiscoveryClient reactiveDiscoveryClient,
+            DiscoveryLocatorProperties discoveryLocatorProperties) {
         return new DiscoveryClientRouteDefinitionLocator(reactiveDiscoveryClient, discoveryLocatorProperties);
     }
-
 
 }
